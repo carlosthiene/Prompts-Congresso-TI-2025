@@ -1,3 +1,85 @@
 # Prompt: Verificação de Referências Bibliográficas
 
-**CONTEXTO:** Este processo faz parte de uma avaliação rigorosa de integridade acadêmica para um manuscrito submetido a publicação científica. O objetivo é assegurar a precisão factual e a correta utilização contextual das fontes citadas no texto fornecido. **TAREFA:** Executar uma análise sistemática para verificar a existência das referências citadas no artigo fornecido e avaliar a coerência temática entre a citação no texto e o conteúdo real da obra referenciada. DADOS/INFORMAÇÕES: Os dados para análise serão fornecidos ao final deste prompt **PROCESSO PASSO-A-PASSO:** 1. **Extração:** Identifique e extraia todas as referências bibliográficas citadas no texto fornecido. 2. **Verificação de Existência:** Para cada referência, utilize ferramentas de busca externa (e.g., Google Search, Google Scholar) para confirmar se a publicação existe realmente e verificar os metadados (título, autores, ano). 3. **Análise de Contexto:** Identifique o trecho exato no artigo onde a referência é citada e o argumento que ela pretende suportar. 4. **Avaliação de Coerência:** Compare o contexto da citação (Passo 3) com o resumo (abstract) ou conteúdo principal da fonte original encontrada (Passo 2). Determine se a citação suporta adequadamente a afirmação feita no texto. 5. **Compilação e Síntese:** Registre os achados na tabela de avaliação e elabore o veredito final baseado na taxa geral de validação. FORMATO DE SAÍDA: Um relatório estruturado contendo duas seções principais: 1. **Tabela de Avaliação de Referências:** Uma tabela Markdown com as seguintes colunas: - `Referência Citada` (Formato abreviado, ex: Autor et al., Ano) - `Status de Verificação` (Confirmada / Não Encontrada / Inconclusivo) - `Avaliação de Coerência` (Coerente / Parcialmente Coerente / Incoerente / N/A) - `Notas` (Breve justificativa da avaliação ou detalhes sobre discrepâncias encontradas) 2. **Veredito Final:** Um parágrafo conclusivo (100-150 palavras) sumarizando a confiabilidade geral das referências do artigo e a coerência de sua aplicação no texto. **RESTRIÇÕES:** - **Foco Exclusivo:** Limite a análise estritamente à validação das citações. NÃO avalie o mérito científico, a metodologia, o estilo de escrita ou as conclusões do artigo. - **Uso Obrigatório de Ferramentas Externas:** A verificação DEVE ser realizada através de buscas na internet. Não confie em dados pré-treinados. - **Objetividade:** A avaliação deve ser imparcial e baseada exclusivamente nas evidências encontradas durante a busca externa. - **Transparência Total:** Se uma referência não puder ser localizada ou acessada para verificação, reporte isso explicitamente como "Inconclusivo" ou "Não Encontrada". NUNCA assuma a validade de uma referência sem verificação externa. **PÚBLICO-ALVO:** Editores de periódicos científicos e autores do manuscrito, que necessitam garantir a validade e o rigor das fontes utilizadas. **DADOS A SEREM ANALISADOS:** [INSIRA AQUI O TEXTO COMPLETO DO ARTIGO CIENTÍFICO A SER ANALISADO]
+## CONTEXTO
+
+Este processo faz parte de uma avaliação rigorosa de integridade acadêmica para um manuscrito submetido a publicação científica. O objetivo é assegurar a precisão factual e a correta utilização contextual das fontes citadas no texto fornecido.
+
+---
+
+## TAREFA
+
+Executar uma análise sistemática para verificar a existência das referências citadas no artigo fornecido e avaliar a coerência temática entre a citação no texto e o conteúdo real da obra referenciada.
+
+---
+
+## DADOS/INFORMAÇÕES
+
+Os dados para análise serão fornecidos ao final deste prompt.
+
+---
+
+## PROCESSO PASSO-A-PASSO
+
+### 1. **Extração**
+Identifique e extraia todas as referências bibliográficas citadas no texto fornecido.
+
+### 2. **Verificação de Existência**
+Para cada referência, utilize ferramentas de busca externa (e.g., Google Search, Google Scholar) para confirmar se a publicação existe realmente e verificar os metadados (título, autores, ano).
+
+### 3. **Análise de Contexto**
+Identifique o trecho exato no artigo onde a referência é citada e o argumento que ela pretende suportar.
+
+### 4. **Avaliação de Coerência**
+Compare o contexto da citação (Passo 3) com o resumo (abstract) ou conteúdo principal da fonte original encontrada (Passo 2). Determine se a citação suporta adequadamente a afirmação feita no texto.
+
+### 5. **Compilação e Síntese**
+Registre os achados na tabela de avaliação e elabore o veredito final baseado na taxa geral de validação.
+
+---
+
+## FORMATO DE SAÍDA
+
+Um relatório estruturado contendo duas seções principais:
+
+### 1. **Tabela de Avaliação de Referências**
+
+Uma tabela Markdown com as seguintes colunas:
+
+- `Referência Citada` (Formato abreviado, ex: Autor et al., Ano)
+- `Status de Verificação` (Confirmada / Não Encontrada / Inconclusivo)
+- `Avaliação de Coerência` (Coerente / Parcialmente Coerente / Incoerente / N/A)
+- `Notas` (Breve justificativa da avaliação ou detalhes sobre discrepâncias encontradas)
+
+### 2. **Veredito Final**
+
+Um parágrafo conclusivo (100-150 palavras) sumarizando a confiabilidade geral das referências do artigo e a coerência de sua aplicação no texto.
+
+---
+
+## RESTRIÇÕES
+
+### **Foco Exclusivo**
+Limite a análise estritamente à validação das citações. NÃO avalie o mérito científico, a metodologia, o estilo de escrita ou as conclusões do artigo.
+
+### **Uso Obrigatório de Ferramentas Externas**
+A verificação DEVE ser realizada através de buscas na internet. Não confie em dados pré-treinados.
+
+### **Objetividade**
+A avaliação deve ser imparcial e baseada exclusivamente nas evidências encontradas durante a busca externa.
+
+### **Transparência Total**
+Se uma referência não puder ser localizada ou acessada para verificação, reporte isso explicitamente como "Inconclusivo" ou "Não Encontrada". NUNCA assuma a validade de uma referência sem verificação externa.
+
+---
+
+## PÚBLICO-ALVO
+
+Editores de periódicos científicos e autores do manuscrito, que necessitam garantir a validade e o rigor das fontes utilizadas.
+
+---
+
+## DADOS A SEREM ANALISADOS
+
+```
+[INSIRA AQUI O TEXTO COMPLETO DO ARTIGO CIENTÍFICO A SER ANALISADO]
+```
